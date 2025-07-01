@@ -1,0 +1,32 @@
+
+{
+  "name": "asic-monitor",
+  "version": "1.0.0",
+  "description": "ASIC Monitor – приложение для мониторинга ASIC-майнеров",
+  "author": "Anatolij Zitkevic",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^24.8.0"
+  },
+  "build": {
+    "appId": "com.asic.monitor",
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/.cache"
+    ]
+  }
+}

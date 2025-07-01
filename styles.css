@@ -1,0 +1,21 @@
+
+body {
+  background: #101020;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+.asic {
+  background: #1e1e2f;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #0005;
+}
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.online { background: green; }
+.offline { background: red; }
